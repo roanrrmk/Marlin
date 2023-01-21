@@ -4105,8 +4105,8 @@
 
   //#define GANTRY_CALIBRATION_SAFE_POSITION XY_CENTER // Safe position for nozzle
   //#define GANTRY_CALIBRATION_XY_PARK_FEEDRATE 3000  // XY Park Feedrate - MMM
-  //#define GANTRY_CALIBRATION_COMMANDS_PRE   ""
-  #define GANTRY_CALIBRATION_COMMANDS_POST  "G28"     // G28 highly recommended to ensure an accurate position
+  #define GANTRY_CALIBRATION_COMMANDS_PRE   "G00 Z380 F3000"
+  #define GANTRY_CALIBRATION_COMMANDS_POST  "G00 Z15 F3000; G28"     // G28 highly recommended to ensure an accurate position
 #endif
 
 /**
